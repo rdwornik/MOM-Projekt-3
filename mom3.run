@@ -1,0 +1,119 @@
+reset;
+model mode3v2.mod;
+data mom3.dat;
+option solver cplex;
+solve;
+
+display Total_Satisfaction;
+display Total_Cost;
+display epsilon;
+
+reset;
+model mode3v2.mod;
+data mom3_-_Copy.dat;
+option solver cplex;
+solve;
+
+display Total_Satisfaction;
+display Total_Cost;
+display epsilon;
+
+reset;
+model mode3v2.mod;
+data mom3_-_Copy_(2).dat;
+option solver cplex;
+solve;
+
+display Total_Satisfaction;
+display Total_Cost;
+display epsilon;
+
+reset;
+model mode3v2.mod;
+data mom3_-_Copy_(3).dat;
+option solver cplex;
+solve;
+
+display Total_Satisfaction;
+display Total_Cost;
+display epsilon;
+
+reset;
+model mode3v2.mod;
+data mom3_-_Copy_(4).dat;
+option solver cplex;
+solve;
+
+display Total_Satisfaction;
+display Total_Cost;
+display epsilon;
+
+reset;
+model mode3v2.mod;
+data mom3_-_Copy_(5).dat;
+option solver cplex;
+solve;
+
+display Total_Satisfaction;
+display Total_Cost;
+display epsilon;
+
+reset;
+model mode3v2.mod;
+data mom3_-_Copy_(6).dat;
+option solver cplex;
+solve;
+
+display Total_Satisfaction;
+display Total_Cost;
+display epsilon;
+
+reset;
+model mode3v2.mod;
+data mom3_-_Copy_(7).dat;
+option solver cplex;
+solve;
+
+display Total_Satisfaction;
+display Total_Cost;
+display epsilon;
+
+reset;
+model mode3v2.mod;
+data mom3_-_Copy_(8).dat;
+option solver cplex;
+solve;
+
+display Total_Satisfaction;
+display Total_Cost;
+display epsilon;
+
+reset;
+model mode3v2.mod;
+data mom3_-_Copy_(9).dat;
+option solver cplex;
+solve;
+
+display Total_Satisfaction;
+display Total_Cost;
+display epsilon;
+
+reset;
+model mode3v2.mod;
+data mom3_-_Copy_(10).dat;
+option solver cplex;
+solve;
+
+display Total_Satisfaction;
+display Total_Cost;
+display epsilon;
+
+reset;
+model mode3v2.mod;
+data mom3_-_Copy_(11).dat;
+option solver cplex;
+solve;
+
+display Total_Satisfaction;
+display Total_Cost;
+display epsilon;
