@@ -1,0 +1,61 @@
+param satisfaction_ratio = 0.7;
+#param w = 0.8;
+param epsilon = 2042500;
+
+
+set K := k1 k2 k3 k4 k5 k6;
+set F := f1 f2;
+set M := m1 m2 m3 m4;
+#set D := F union M;
+set D := f1 f2 m1 m2 m3 m4;
+#set Z := K union M;
+set Z :=  m1 m2 m3 m4 k1 k2 k3 k4 k5 k6;
+
+set client_supplier[f1] := k1 k3 k4 k6;
+set client_supplier[f2] := k1;
+set client_supplier[m1] := k2 k3 k4 k5 k6;
+set client_supplier[m2] := k1 k2 k3 k4 k5;
+set client_supplier[m3] := k2 k3 k5 k6;
+set client_supplier[m4] := k3 k4 k5 k6;
+
+set fabric_magazine[f1] := m1 m2 m3 m4;
+set fabric_magazine[f2] := m2 m3 m4;
+
+param cost: f1   f2   m1   m2   m3   m4:=
+m1			0.4  0    0    0    0    0
+m2			0.3  0.3  0    0    0    0
+m3			1.0  0.7  0    0    0    0
+m4			0.3  0.2  0    0    0    0
+k1			2.0  1.0  0    2.0  0    0
+k2			0    0    1.5  0.4  1.8  0
+k3			1.9  0    0.7  0.3  1.8  0.4
+k4			1.8  0    1.2  1.6  0    0.5
+k5			0    0    0    1.6  1.5  0.4
+k6			1.1  0    1.2  0    1.5  1.7;
+
+param satisfaction: f1   f2   m1   m2   m3   m4:=
+k1			        5    10   5    5    5    5
+k2			        5    5    10   5    5    5
+k3			        5    5    5    10   10   5
+k4			        10   5    5    5    5    5
+k5			        10   10   10   10   10   10
+k6			        5    5    5    5    10   10;
+
+param magazine:=
+m1 70000
+m2 50000
+m3 100000
+m4 40000;
+
+param fabric:=
+f1 150000
+f2 200000;
+
+param demand:=
+k1 50000
+k2 10000
+k3 40000
+k4 35000
+k5 60000
+k6 20000;
+
